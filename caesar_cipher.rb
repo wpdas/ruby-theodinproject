@@ -1,7 +1,4 @@
 # Caesar Cipher
-# A Caesar cipher is a type of substitution cipher in which each letter in the plaintext is replaced with the
-# letter standing at a fixed number of positions down the alphabet.
-# For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
 
 require "debug"  
 
@@ -59,3 +56,11 @@ end
 
 result = caesar_cipher_v2("What a string!", 5)
 puts "Result: #{result}" 
+
+# Original string: What a string!
+# Shift: 5 
+#           _____________________________________________________
+# Alphabet: |a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|
+# Cipher:   |f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|a|b|c|d|e|
+#           ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+# Result: Bmfy f xywnsl!
